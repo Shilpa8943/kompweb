@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button type="button" id="demo">click</button> -->
+    <button type="button" id="demo1">click me</button>
+    <button type="button" id="demo2">prevent</button>
+
+    <script>
+        //type,target.
+
+        const but1=document.getElementById("demo")
+        but1.addEventListner('click',function (event)
+        {
+            console.log("event type", event.type);
+             console.log("event target",event.target);
+        })
+
+     // removeevent...
+     const click=()=>
+      {
+        alert("button is clicked");
+    }
+   const but=document.getElementById("demo1");
+   but.addEventListener('click',handclick);
+   setTimeout(()=>{but.removeEventListener('click',handclick);},2000);
+ 
+   // preventdefault
+   const but2=document.getElementById("demo2");
+   but2.addEventListener('click',function(event){
+   event.preventDefault();
+
+})
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let fruits=['mango','banana','apple','watermelon'];
+        console.log(fruits);
+        console.log(fruits.length);
+
+        //accessing array elements...
+
+        console.log(fruits[0]);
+
+        //change an array element....
+
+        fruits[2]="kiwi";
+        console.log(fruits);
+
+       //methods in array......
+
+        //1.push an element.....
+
+       fruits.push("coconut");
+        console.log(fruits);
+
+        //2.pop an element....
+
+        fruits.pop();
+        console.log(fruits);
+
+     //3.unshift().....
+
+     fruits.unshift("pear");
+     console.log(fruits);
+
+     //4. shift()....
+
+     fruits.shift();
+     console.log(fruits);
+
+     //concatination...
+
+     let arr1=[1,2,3,4,5];
+     let arr2=[6,7,8,9,10];
+     console.log(arr1.concat(arr2));
+
+     //slice method().......
+
+     
+     let newarray=fruits.slice(0,3);
+     console.log(newarray);
+
+     //splice method()......
+
+    fruits.splice(2,0,"pear");
+    console.log(fruits);
+    fruits.splice(2,1,"avani")
+    console.log(fruits);
+
+
+    //accessing array element using loop....
+ let numbers=[1,2,3,4,5];
+    for(i=0;i<numbers.length;i++)
+    {
+        console.log(numbers[i]);
+    }
+
+ //sorting in array.....
+ let number = [4,5,1,3,6 ,10,21];
+      console.log(number)
+      // console.log(numbers.sort())
+      number.sort((a, b) => a - b);
+      console.log(number) //acesding order
+
+      number.sort((a, b) => b - a); // Sort in descending order
+      console.log(number);
+
+//map method....
+ let arr3=[1,2,3,4,5]
+ arr3.map(i=>console.log(i));
+
+//filter method......
+const filtervalue= arr3.filter(i=>i>3);
+console.log(filtervalue);
+
+//reduce method...
+
+let arr4=[1,2,3,4,5,6,7,8];
+console.log(arr4);
+const sum=arr4.reduce((accumulator,currentValue)=>accumulator + currentValue,0);
+console.log(sum);
+    
+    </script>
+</body>
+</html>

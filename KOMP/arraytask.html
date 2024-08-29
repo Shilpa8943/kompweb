@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //array spread operation....
+
+        let arr1=[1,2,3,4,5];
+        console.log(arr1);
+         newarray=[...arr1];
+        console.log(newarray);
+
+        //map method......
+
+        const mapvalue=arr1.map(i=>console.log(i));
+        const mapvalue1=arr1.map(i=>console.log(i*2));
+    //     const mapvalue2=arr1.map(i=>
+    //     {
+    //         if(i%2==0)
+    //     {
+    //         return even;
+
+    //     }
+    //     else{
+    //     return odd;
+    //     }
+        
+    //     }
+    //    );
+    //    console.log(mapvalue2);
+
+       //filter method.....
+
+
+       const filtervalue=arr1.filter(i=>i%2==0);
+       console.log(filtervalue);
+
+       //reduce method......
+
+       const sum=arr1.reduce((accumulator,currentvalue)=>accumulator+currentvalue,0);
+       console.log(sum);
+       
+        
+
+    </script>
+</body>
+</html>

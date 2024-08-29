@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Restaurant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+        .parentcontainer{
+            background-color: url('ubereat1');
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            color: #555;
+        }
+        input, textarea, select {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="parentcontainer">
+    <div class="container">
+        <h2>Add New Restaurant</h2>
+        <form action="/submit-restaurant" method="POST">
+            <label for="restaurant-name">Restaurant Name:</label>
+            <input type="text" id="restaurant-name" name="restaurant-name" required>
+
+            <label for="restaurant-address">Address:</label>
+            <input type="text" id="restaurant-address" name="restaurant-address" required>
+
+            <label for="restaurant-phone">Phone Number:</label>
+            <input type="tel" id="restaurant-phone" name="restaurant-phone" required>
+
+            <label for="restaurant-email">Email:</label>
+            <input type="email" id="restaurant-email" name="restaurant-email" required>
+
+            <label for="restaurant-cuisine">Cuisine Type:</label>
+            <select id="restaurant-cuisine" name="restaurant-cuisine">
+                <option value="italian">Italian</option>
+                <option value="chinese">Chinese</option>
+                <option value="indian">Indian</option>
+                <option value="mexican">Mexican</option>
+                <option value="american">American</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <label for="restaurant-description">Description:</label>
+            <textarea id="restaurant-description" name="restaurant-description" rows="4"></textarea>
+
+            <label for="restaurant-opening-hours">Opening Hours:</label>
+            <input type="text" id="restaurant-opening-hours" name="restaurant-opening-hours" placeholder="e.g., 9 AM - 10 PM">
+
+            <label for="restaurant-delivery">Delivery Options:</label>
+            <select id="restaurant-delivery" name="restaurant-delivery">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <button type="submit">Add Restaurant</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

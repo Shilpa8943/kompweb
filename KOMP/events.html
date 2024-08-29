@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- normal onclick -->
+
+    <!-- <button type="button" onclick="(alert('this is an alert'))">click me</button> -->
+
+ <!-- click event using js -->
+
+ <button id="demo" type="button">click me</button>
+
+ <script>
+
+function handclick()
+{
+    alert('this is a heading');
+}
+
+const button=document.getElementById("demo");
+button.addEventListener('click', handclick);
+ </script>
+</body>
+</html>

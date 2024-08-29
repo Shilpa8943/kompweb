@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div id="container">
+    <button type="button" class="demo">1</button>
+    <button type="button" class="demo">2</button>
+    <button type="button" class="demo">3</button>
+    <button type="button" class="demo1">+</button> <br>
+    <button type="button" class="demo">4</button>
+    <button type="button" class="demo">5</button>
+    <button type="button" class="demo">6</button>
+    <button type="button" class="demo1">-</button> <br>
+    <button type="button" class="demo">7</button>
+    <button type="button" class="demo">8</button>
+    <button type="button" class="demo">9</button>
+    <button type="button" class="demo1">*</button> <br>
+    <button type="button" class="demo">.</button>
+    <button type="button" class="demo">0</button>
+    <button type="button" class="demo1">/</button> 
+    <button type="button" class="demo2">=</button>
+</div>
+
+<script>
+ 
+ const calc=document.getElementsByClassName("demo");
+
+ 
+ for(i=0;i<=calc.length;i++)
+ {
+    calc[i].style.border="1px solid black";
+
+    calc[i].style.width="20px";
+
+
+ }
+ const opt=document.getElementsByClassName("demo1");
+ for(j=0;j<=opt.length;j++)
+ {
+    opt[j].style.border="1px solid black";
+
+    opt[j].style.width="30px";
+
+
+ }
+ const res=document.getElementsByClassName("demo2");
+ res.addListner('click', calcop);
+function clacop()
+{
+    for(i=0;i<=calc.length;i++);
+    {
+        for(j=0;j<=opt;j++)
+    {
+        if(j=="+")
+    {
+        result=i+ calcop(i);
+
+    }
+    }
+    }
+}
+</script>
+
+</body>
+</html>

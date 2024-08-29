@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .static{
+            border :2px solid pink;
+            
+            position: static;
+            left: 20px;
+
+        
+        }
+        .relative{
+            border :2px solid pink;
+            
+            position: relative;
+            left: 30px;
+            
+        }
+        .fixed{
+            border :2px solid pink;
+            
+            position: fixed;
+            bottom: 0px;
+            right: 2px;
+            width: 300px;
+        
+        }
+        body{
+            height: 1000vh;
+        }
+        .child{
+            border :2px solid pink;
+            
+            position: absolute;
+            top: 20pt;
+            left: 30px;
+        }
+            .parent{
+                border :2px solid pink;
+            position:relative ;
+            height: 300px;
+            width: 400px;
+
+            }
+    </style>
+</head>
+<body>
+    <!-- <div class="static"> the div tag is used to style set of elements.</div>
+    
+    <br> <br>
+    <div class="relative">the div tag is used to style set of elements.</div> <br><br> 
+    <div class="fixed">the div tag is used to style set of elements.</div><br><br> -->
+
+    <div class="parent">  <div class="child">the div tag is used to style set of elements.</div></div>
+</body>
+</html>
